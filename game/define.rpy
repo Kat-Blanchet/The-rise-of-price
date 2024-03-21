@@ -35,6 +35,6 @@ transform smide_right:
 
 
 # system
-
+image splashy = Movie( play='splash_screen.webm' )
 define config.has_autosave = False
 define config.has_quicksave = False

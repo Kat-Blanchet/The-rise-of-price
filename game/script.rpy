@@ -1,9 +1,9 @@
 ﻿# The game starts here.
 label splashscreen:
-    image splashy = 'splash_screen.webm'
     scene black
+    pause(0.5)
     scene splashy with dissolve
-    pause(5)  #length of above movie
+    pause(4)  #length of above movie
     scene black with dissolve
     return
 

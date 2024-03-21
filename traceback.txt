@@ -1,73 +1,43 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('splash_screen.webm') at 0x0000000004ecb820>:
-  File "renpy/common/00start.rpy", line 241, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/script.rpy", line 5, in script
-    scene splashy with dissolve
-Exception: Could not load image 'splash_screen.webm' (webm files are not supported by Ren'Py): error('Unsupported image format')
+While processing the color property of style say_label:
+  File "renpy/common/00start.rpy", line 83, in _init_language
+    renpy.change_language(language)
+  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
+    __update()
+  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
+    renpy.style.rebuild()
+Exception: Color string 'f0000' must be 3, 4, 6, or 8 hex digits long.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 241, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/script.rpy", line 5, in script
-    scene splashy with dissolve
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\ast.py", line 1363, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\exports.py", line 1781, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\display\core.py", line 1548, in do_with
-    return self.interact(trans_pause=True,
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\display\core.py", line 2165, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\display\core.py", line 2818, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\display\core.py", line 1352, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 486, in renpy.display.render.render_screen
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\display\transition.py", line 384, in render
-    top = render(self.new_widget, width, height, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\display\transform.py", line 957, in render
-    return RenderTransform(self).render(width, height, st, at)
-  File "accelerator.pyx", line 978, in renpy.display.accelerator.RenderTransform.render
-  File "accelerator.pyx", line 413, in renpy.display.accelerator.RenderTransform.render_child
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\display\image.py", line 513, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\display\image.py", line 316, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\display\im.py", line 626, in render
-    return cache.get(self, render=True)
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\display\im.py", line 309, in get
-    surf = image.load()
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\display\im.py", line 761, in load
-    raise e
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\display\im.py", line 722, in load
-    surf = renpy.display.pgrender.load_image(f, filename)
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\display\pgrender.py", line 201, in load_image
-    raise Exception("Could not load image {!r}{}: {!r}".format(filename, extra, e))
-Exception: Could not load image 'splash_screen.webm' (webm files are not supported by Ren'Py): error('Unsupported image format')
+  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\main.py", line 635, in main
+    run(restart)
+  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\main.py", line 75, in run
+    renpy.translation.init_translation()
+  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\translation\__init__.py", line 664, in init_translation
+    renpy.store._init_language() # type: ignore
+  File "renpy/common/00start.rpy", line 83, in _init_language
+    renpy.change_language(language)
+  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\translation\__init__.py", line 763, in change_language
+    i()
+  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
+    __update()
+  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
+    renpy.style.rebuild()
+  File "style.pyx", line 803, in renpy.style.rebuild
+  File "style.pyx", line 796, in renpy.style.build_styles
+  File "style.pyx", line 717, in renpy.style.build_style
+  File "style.pyx", line 714, in renpy.style.build_style
+  File "gen3-static/style_functions.pyx", line 323, in style_functions.color_property
+  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\color.py", line 159, in __new__
+    raise Exception("Color string {!r} must be 3, 4, 6, or 8 hex digits long.".format(c))
+Exception: Color string 'f0000' must be 3, 4, 6, or 8 hex digits long.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.2.1.24030407
 The Rise of Price 0.3
-Thu Mar 21 12:45:14 2024
+Thu Mar 21 13:23:14 2024
