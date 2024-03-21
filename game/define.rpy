@@ -32,6 +32,9 @@ transform smide_right:
 
 # background imagee
 
+
+
 # system
+
 define config.has_autosave = False
 define config.has_quicksave = False

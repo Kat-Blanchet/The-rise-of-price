@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/options.rpy", line 128: expected expression
-    default preferences.afm_time = 
-                                   ^
+File "game/script.rpy", line 4: invalid syntax
+    renpy.movie_cutscene('splash_screen.webm') with dissovle
+                                                ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Thu Mar 21 10:17:16 2024
+Thu Mar 21 12:34:41 2024
