@@ -1,13 +1,13 @@
-﻿I'm sorry, but an uncaught exception occurred.
+﻿0I'm sorry, but an uncaught exception occurred.
 
-While processing the color property of style say_label:
+While processing the color property of style gui_text:
   File "renpy/common/00start.rpy", line 83, in _init_language
     renpy.change_language(language)
   File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
     __update()
   File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
     renpy.style.rebuild()
-Exception: Color string 'f0000' must be 3, 4, 6, or 8 hex digits long.
+IndexError: string index out of range
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -30,14 +30,15 @@ Full traceback:
     renpy.style.rebuild()
   File "style.pyx", line 803, in renpy.style.rebuild
   File "style.pyx", line 796, in renpy.style.build_styles
+  File "style.pyx", line 687, in renpy.style.build_style
   File "style.pyx", line 717, in renpy.style.build_style
   File "style.pyx", line 714, in renpy.style.build_style
   File "gen3-static/style_functions.pyx", line 323, in style_functions.color_property
-  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\color.py", line 159, in __new__
-    raise Exception("Color string {!r} must be 3, 4, 6, or 8 hex digits long.".format(c))
-Exception: Color string 'f0000' must be 3, 4, 6, or 8 hex digits long.
+  File "C:\Users\Shadow\Downloads\renpy-8.2.1-sdk\renpy\color.py", line 133, in __new__
+    if c[0] == '#':
+IndexError: string index out of range
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.2.1.24030407
 The Rise of Price 0.3
-Thu Mar 21 13:23:14 2024
+Thu Mar 21 17:21:18 2024
