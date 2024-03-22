@@ -1,3 +1,8 @@
+make character sheets with info about the characters in the game 
+    draft the charaters using game/charater_info.txt
+    revise them
+
+
 make the first part story 
     1.  wirite the story 
     2.  revise the story
@@ -6,7 +11,8 @@ make the first part story
     5.  move on to part 2 
 
 make the content for the game 
-    1.  make past kai and kat first
+    1.  make past kai and kat first 
+            use vroid
     2.  add them in the project
     3.  define them in game/define.rpy
     4.  found out what locations that i want to have in the game
