@@ -1,0 +1,48 @@
+Past Characters
+
+define pk = Character('Past Kat', color='7B0323')
+define pk2 = Character('Past Kai', color='00008B')
+
+Past Akira
+
+Part 1 characters
+
+Kat
+role: main character
+personality: 
+
+Kai
+role: main side character
+personality:
+
+Akira
+role: Main Antagonist or friend based on a choice
+personality:
+
+fumi 
+role: suporting character
+personality:
+
+kate
+role: suporting character
+personality:
+
+Part 2 characters
+
+"Cursed" Kat (if path 1 is picked)
+
+
+"Prince" Kat (if path 2 is picked)
+
+
+Kai (if path 2 is picked)
+
+
+"Prince" Kai (if path 1 is picked)
+
+
+
+Akira
+
+
+Rose (if path 1 is picked)

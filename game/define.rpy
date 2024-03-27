@@ -6,11 +6,13 @@ define fumi = Character('Fumi', color='0000FF') #get bring back as rose
 define kate = Character('Kate', color='ADD8E6') #dead at mid way 
 define pk = Character('Past Kat', color='7B0323')
 define pk2 = Character('Past Kai', color='00008B')
+define akira = Character("Past Akira", color='301934')
 
 # character based on a choice at the mid way point of the game 
 define ckat = Character('"Cursed" Kat', color='560e2c')
 define pkat = Character('"Prince" Kat', color='560e2c')
-define pkai =  Character('Kai', color='00008B')
+define kai2 =  Character('Kai', color='00008B')
+define pkai =  Character('"Prince" Kai', color='00008B')
 define akira = Character("Akira", color='301934')
 define rose = Character("Rose")
 
